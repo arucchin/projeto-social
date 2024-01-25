@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Projeto Redes Sociais</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background: bisque url('imagens/fundo-madeira.jpg') center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        .menu {
+            text-align: right;
+            
+        }
+
+        #botao img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin: 5px 10px 5px 0px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
+            box-sizing: border-box;
+        }
+
+        #botao img:hover {
+            border: 2px solid rgba(255, 255, 255, 0.651);
+            transform: translate(-3px, -3px);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+            transition: transform .5s, border .3s;
+        }
+
+        p#erro {
+            background-color: rgb(255, 106, 106);
+        }
+
+        .celular {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            background-image: url('imagens/frame-iphone.png');
+            height: 627px;
+            width: 311px;
+        }
+
+        iframe#tela {
+            position: fixed;
+            top: 79px;
+            left: 21px;
+
+            height: 472px;  
+            width: 268px;
+        }
+    </style>
+</head>
+<body>
+    <section class="menu">
+        <div id="botao">
+            <a href="paginas/home.html" target="tela"><img src="imagens/logo-home.jpg" type=""></a>
+        </div>
+        <div id="botao">
+            <a href="paginas/youtube.html" target="tela"><img src="imagens/logo-youtube.jpg" type=""></a>
+        </div>
+        <div id="botao">
+            <a href="paginas/github.html" target="tela"><img src="imagens/logo-github.jpg" type=""></a>
+        </div>
+        <div id="botao">
+            <a href="paginas/instagram.html" target="tela"><img src="imagens/logo-instagram.jpg" type=""></a>
+        </div>
+        <div id="botao">
+            <a href="paginas/twitter.html" target="tela"><img src="imagens/logo-twitter.jpg" type=""></a>
+        </div>
+        <div id="botao">
+            <a href="paginas/facebook.html" target="tela"><img src="imagens/logo-facebook.jpg" type=""></a>
+        </div>
+    </div>
+    <section class="celular">
+            <iframe src="paginas/home.html" name="tela" id="tela" frameborder="1">
+                <p id="erro">Seu navegador não possui compatibilidade com este tipo de recurso.</p>
+            </iframe>
+    </div>
+</body>
+</html>
